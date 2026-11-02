@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de por Vida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍿 Calculadora de por Vida</h1>
+    <p>Calculá tus gastos futuros y organizá tus vacaciones.</p>
+  </header>
+
+  <main>
+
+    <section class="calculadora">
+      <h2>🍟 Calculadora de Snacks</h2>
+
+      <label>Edad actual</label>
+      <input type="number" id="edadActual" placeholder="Ej: 18">
+
+      <label>Edad máxima estimada</label>
+      <input type="number" id="edadMaxima" placeholder="Ej: 80">
+
+      <label>Snack favorito</label>
+      <input type="text" id="snack" placeholder="Ej: Papas fritas">
+
+      <label>Snacks por día</label>
+      <input type="number" id="snacksDia" placeholder="Ej: 2">
+
+      <label>Precio por unidad ($)</label>
+      <input type="number" id="precio" placeholder="Ej: 1500">
+
+      <button onclick="calcularSnacks()">Calcular</button>
+
+      <div id="resultadoSnacks" class="resultado"></div>
+    </section>
+
+    <section class="calculadora">
+      <h2>✈️ Presupuesto de viaje</h2>
+
+      <label>Días de viaje</label>
+      <input type="number" id="dias" placeholder="Ej: 10">
+
+      <label>Presupuesto máximo ($)</label>
+      <input type="number" id="presupuesto" placeholder="Ej: 500000">
+
+      <label>Comidas por día</label>
+      <input type="number" id="comidasDia" placeholder="Ej: 3">
+
+      <button onclick="calcularViaje()">Calcular</button>
+
+      <div id="resultadoViaje" class="resultado"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Calculadora de Abastecimiento de por Vida © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
